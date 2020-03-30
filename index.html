@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GunZaaN</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container1">
+        <h2>Program 1: Your age in days</h2>
+        <div class="flex-box-container1">
+            <div>
+                <button onclick="ageInDays()" class="btn btn-success">Click Me</button>
+            </div>
+            <div>
+                <button onclick="reset()" class="btn btn-danger">Reset</button>
+            </div>          
+        </div>
+        <div class="flex-box-container1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h2>Program 2: Rock Paper Scisors</h2>
+        <div class="flex-box-rps" id="rps-div">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvE-qg8vyEBebEha0KgwoRy872HYIgYiS3BnbddmeBrYejOjty29hjP5rH&s" alt="rock" height="150" width="150" id="rock" onclick="rpsGame(this)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1dtEmjuwRDN5a8UmAr2cUl3V7QqbfKUfRl4LtRdVXGhJHcCn2CUoSr6U&s" alt="rock" height="150" width="150" id="paper" onclick="rpsGame(this)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUatB7EK-zk3ozOCBo_D3j9umXCJET1BbIEslaJeyYKkIBRsNa2KwqjekL&s" alt="rock" height="150" width="150" id="scissors" onclick="rpsGame(this)">        
+        </div>
+    </div>
+
+    <div class="container3">
+        <h2>Program 3: Blackjack</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div class="your-box">
+                <h2>You: <span id="you">0</span></h2>
+            </div>
+
+            <div class="dealer-box">
+                <h2>Dealer: <span id="dealer">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id='hit'>Hit</button>
+                <button class="btn-lg btn-warning mr-2" id='stand'>Stand</button>
+                <button class="btn-lg btn-danger" id='deal'>Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table class="table" border="1px">
+                <tr>
+                    <td>Wins</td>
+                    <td>Loses</td>
+                    <td>Draws</td>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+        
+    <script src='static/js/script.js'></script>
+</body>
+</html>

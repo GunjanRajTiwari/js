@@ -1,0 +1,40 @@
+.container1 , .container2, .container3 {
+    border: 1px solid black;
+    width: 75%;
+    margin: 2% auto;
+    text-align: center;
+}
+.flex-box-container1, .flex-box-rps, .flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3, .table{
+    background: url('https://ie1-gfebf.cdnppb.net/mexchangeblackjack/turbo/32/assets/gameView/tableBackground.png?v32');
+    color: whitesmoke;
+}
+
+.flex-box-container1 div {
+    padding: 10px;
+}
+
+.flex-box-rps img:hover {
+    box-shadow: 0px 10px 50px rgba(50,100,200,1);
+}
+.your-box , .dealer-box {
+    height:350px;
+    flex: 1;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.flex-blackjack-row-1 img {
+    width: 20%;
+    margin-left: 2%;
+}
+.table {
+    border-color: whitesmoke;
+}
